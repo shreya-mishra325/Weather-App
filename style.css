@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #D9C5FE;
+}
+
+.weather {
+    background-color: rgb(133, 67, 133);
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 57vh;
+    width: 40vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-bar input {
+   outline: none;
+   width: 85%;
+   padding: 10px;
+   padding-left: 0.5rem;
+   border-radius: 1rem;
+   border-style: none;
+   font-size: 1rem;
+}
+
+.data {
+    margin: 2rem 0 2rem 0;
+}
+button {
+    background-color: #D9C5FE;
+    border-style: none;
+    font-size: 1.35rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+button i {
+    padding: 9px;
+}
+.details {
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+    margin-top: 1rem;
+    margin: 1rem;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.location {
+    font-size: 2rem;
+}
+.temperature {
+    font-size: 3rem;
+}
+.weather-icon {
+    margin-top: -30px;
+    height: 140px;
+    width: 140px;
+    align-self: center;
+}
+.fas fa-water {
+    height: 100px;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.para {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 780px) {
+    .data {
+        height: 30px;
+    }
+    .description {
+        margin-top: 60px;
+        margin: 10px;
+        font-size: 28px;
+    }
+    .weather{
+        text-wrap: wrap;
+        height: 57vh;
+    }
+    .details {
+        margin-top: -50px;
+        margin: 15px;
+        gap: 58px;
+    }
+    .weather-icon {
+        padding-top: 9px;
+        height: 120px;
+        width: 120px;
+    }
+    .search-bar input {
+        width: 70%;
+    }
+    .temperature {
+        font-size: 3rem;
+    }
+    .location {
+        margin-bottom: 12px;
+    }
+}   

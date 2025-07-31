@@ -94,6 +94,12 @@ button i {
 }
 
 @media (max-width: 780px) {
+    .weather {
+        width: 75%;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        height: 57vh;
+    }
     .data {
         height: 30px;
     }
@@ -101,10 +107,6 @@ button i {
         margin-top: 60px;
         margin: 10px;
         font-size: 28px;
-    }
-    .weather{
-        text-wrap: wrap;
-        height: 57vh;
     }
     .details {
         margin-top: -50px;
@@ -117,7 +119,7 @@ button i {
         width: 120px;
     }
     .search-bar input {
-        width: 70%;
+        width: 80%;
     }
     .temperature {
         font-size: 3rem;

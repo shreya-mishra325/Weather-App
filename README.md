@@ -1,4 +1,4 @@
-# 🌦 Weather Web Server
+# 🌦 Weather Web App
 
 A simple yet responsive weather web app that displays real-time weather information like temperature, city name, weather conditions, humidity, and wind speed — all fetched from the OpenWeatherMap API.
 

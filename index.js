@@ -25,7 +25,7 @@ function showData() {
             text.innerText = data.name;
             temperature.innerText = `${Math.round(data.main.temp)}°C`;
             description.innerText = data.weather[0].description;
-            windSpeed.innerText = ` ${data.wind.speed} km/hr`;
+            windSpeed.innerText = ` ${Math.round(data.wind.speed*3.6)} km/h`;
             humidity.innerText = ` ${data.main.humidity}%`;
             image.innerHTML = data.weather[0].icon.png;
         })

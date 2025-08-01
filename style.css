@@ -93,12 +93,12 @@ button i {
     font-size: 1.2rem;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 550px) {
     .weather {
-        width: 75%;
+        width: 73%;
         flex-wrap: wrap;
         text-wrap: wrap;
-        height: 57vh;
+        height: 60vh;
     }
     .data {
         height: 30px;

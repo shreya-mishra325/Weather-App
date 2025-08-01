@@ -27,7 +27,22 @@ function showData() {
             description.innerText = data.weather[0].description;
             windSpeed.innerText = ` ${Math.round(data.wind.speed*3.6)} km/h`;
             humidity.innerText = ` ${data.main.humidity}%`;
-            image.innerHTML = data.weather[0].icon.png;
+
+            function check () {
+            const weatherImg = document.querySelector('.weather-icon');
+            if(data.weather[0].main === 'Clouds') {
+            weatherImg.src = "./images/cloudy.png";
+            } else if(data.weather[0].main === 'Rain') {
+            weatherImg.src = "./images/rainy.webp";
+            }
+            else if(data.weather[0].main === 'Clear') {
+            weatherImg.src = "./images/clearsky.png";
+            }else {
+            weatherImg.src = "./images/thunderstrom.png";
+            }
+            return;
+            };
+            check();
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
@@ -44,8 +59,7 @@ button.addEventListener('click', (evt) =>
     else
       showData();
     }
-  }
-);
+  });
 
 input.addEventListener('keypress', (evt) => {
 if(evt.key === 'Enter') {

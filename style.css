@@ -74,8 +74,8 @@ button i {
 }
 .weather-icon {
     margin-top: -15px;
-    height: auto;
-    width: 140px;
+    height: 126px;
+    width: 126px;
     align-self: center;
 }
 .fas fa-water {
@@ -98,7 +98,7 @@ button i {
         width: 73%;
         flex-wrap: wrap;
         text-wrap: wrap;
-        height: 58vh;
+        height: 57vh;
     }
     .data {
         height: 30px;

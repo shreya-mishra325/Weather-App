@@ -25,6 +25,7 @@ h1 {
 }
 
 .search-bar input {
+   font-family: 'Outfit', sans-serif;
    outline: none;
    width: 85%;
    padding: 10px;
@@ -68,15 +69,18 @@ button i {
 
 .location {
     font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 .temperature {
     font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 .weather-icon {
     margin-top: -15px;
     height: 126px;
     width: 126px;
     align-self: center;
+    aspect-ratio: 1 / 1;
 }
 .fas fa-water {
     height: 100px;

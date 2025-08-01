@@ -30,15 +30,22 @@ function showData() {
 
             function check () {
             const weatherImg = document.querySelector('.weather-icon');
-            if(data.weather[0].main === 'Clouds') {
+            if(data.weather[0].description === 'overcast clouds') {
             weatherImg.src = "./images/cloudy.png";
-            } else if(data.weather[0].main === 'Rain') {
+            } else if(data.weather[0].description === 'broken clouds' || data.weather[0].description === 'scattered clouds') {
+            weatherImg.src = "./images/clouds.png";
+            }
+            else if(data.weather[0].main === 'Rain') {
             weatherImg.src = "./images/rainy.webp";
             }
             else if(data.weather[0].main === 'Clear') {
             weatherImg.src = "./images/clearsky.png";
-            }else {
-            weatherImg.src = "./images/thunderstrom.png";
+            }
+            else if(data.weather[0].main === 'Snow') {
+            weatherImg.src = "./images/snow.png";
+            }
+            else {
+            weatherImg.src = "./images/thunderstorm.png";
             }
             return;
             };

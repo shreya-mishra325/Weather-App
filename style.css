@@ -9,6 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #D9C5FE;
+    overflow: auto;
 }
 
 .weather {
@@ -16,8 +17,9 @@ body {
     color: rgb(255, 255, 255);
     padding: 2rem;
     border-radius: 1rem;
-    height: 57vh;
-    width: 40vh;
+    max-height: 90vh;
+    height: fit-content;
+    overflow-y: auto;
 }
 
 h1 {
@@ -27,7 +29,7 @@ h1 {
 .search-bar input {
    font-family: 'Outfit', sans-serif;
    outline: none;
-   width: 85%;
+   width: 80%;
    padding: 10px;
    padding-left: 0.5rem;
    border-radius: 1rem;
@@ -87,6 +89,7 @@ button i {
 }
 
 .description {
+    height: 30px;
     margin-top: 20px;
     font-size: 1.8rem;
     font-family: "Outfit", sans-serif;
@@ -102,7 +105,7 @@ button i {
         width: 73%;
         flex-wrap: wrap;
         text-wrap: wrap;
-        height: 57vh;
+        max-height: 90vh;
     }
     .data {
         height: 30px;
@@ -132,3 +135,10 @@ button i {
         margin-bottom: 12px;
     }
 }   
+
+@media (max-height: 724px) {
+    .weather {
+        max-width: 80vh;
+        overflow-y: auto;
+    }
+}

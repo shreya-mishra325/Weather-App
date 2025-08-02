@@ -91,6 +91,7 @@ button i {
 .description {
     height: 30px;
     margin-top: 20px;
+    margin-bottom: 8px;
     font-size: 1.8rem;
     font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
